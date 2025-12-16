@@ -1,0 +1,58 @@
+body {
+    animation: fallDown 500ms ease-in-out forwards;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b1ff8f, #15ff00);
+    text-align: center;
+}
+
+@keyframes fallDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+
+.container {
+    animation: fallDown 1s ease-in-out forwards;
+    margin: 70px auto;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: #27ae60;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+button {
+    transition: all 0.8s ease;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #219653;
+    background: linear-gradient(to right, #b1ff8f, #219653);
+}

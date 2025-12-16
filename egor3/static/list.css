@@ -1,0 +1,70 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fefefe, rgb(0, 247, 255));
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: rgb(20, 152, 156);
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(0, 247, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: rgba(0, 247, 255, 0.4);
+}
+
+a {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    background: rgb(20, 152, 156);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.3s;
+}
+
+a:hover {
+    transform: scale(1.05);
+    background: rgb(0, 140, 145);
+}

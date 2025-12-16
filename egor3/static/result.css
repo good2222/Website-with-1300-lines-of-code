@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fefefe, rgb(0, 247, 255));
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;   /* Це і так центрує по горизонталі */
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+}
+
+
+h1 {
+    color: rgb(20, 152, 156);
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.result-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(36, 130, 133);
+    margin-bottom: 30px;
+}
+
+.result-score span {
+    color: #0aa;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.exit {
+    position: absolute; /* дає змогу вказати точне місце */
+    top: 10px;          /* відступ зверху */
+    right: 10px;        /* відступ справа */
+    padding: 10px 15px;
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.exit:hover {
+    background-color: #ff1f1f;
+}
+
+
+
+a {
+    padding: 10px 20px;
+    background: rgb(20, 152, 156);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.3s;
+}
+
+a:hover {
+    transform: scale(1.05);
+    background: rgb(0, 140, 145);
+}

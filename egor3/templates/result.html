@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Результати</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Результати вікторини</h1>
+        
+        <p class="result-score">
+            Правильних відповідей: <span>{{ correct }}</span> з <span>{{ total }}</span>
+        </p>
+        
+        <div class="buttons">
+            <a href="{{ url_for('list') }}">Список учасників</a>
+            <a href="{{ url_for('index') }}">На головну</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Питання</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+</head>
+<body>
+    
+    <form method="POST" action="{{ url_for('exit_test') }}">
+        <button type="submit" class="exit">Вийти з тесту..!</button>
+    </form>
+
+    <div class="container">
+
+
+        <div style="text-align: right; font-weight: bold; margin-bottom: 10px;">
+            Питання {{ current_number }} з {{ total_questions }}
+        </div>
+
+        <h2>{{ question }}</h2>
+
+        <form method="POST" action="{{ url_for('question') }}"> 
+            {% for answer in answers %}
+                <div>
+                    <input type="radio" name="answer" value="{{ answer }}" required>
+                    <label>{{ answer }}</label>
+                </div>
+            {% endfor %}
+
+            <button type="submit">Відповісти</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='list.css') }}">
+    <meta charset="UTF-8">
+    <title>Топ учасників</title>
+</head>
+<body>
+    <h1>Топ учасників всіх вікторин</h1>
+    <ol>
+        {% for user in users[:5] %}
+        <li>{{ user.name }} — {{ user.score }} балів</li>
+        {% endfor %}
+    </ol>
+    <p><a href="{{ url_for('index') }}">Повернутися на головну</a></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Неправильна відповідь</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Неправильно</h1>
+        <p class="success-message"> Твоя відповідь: <b>{{ user_answer }}</b></p>
+        <form method="POST" action="{{ url_for('next_question') }}">
+            <button type="submit" name="action" value="next">Продовжити</button>
+        </form>
+    </div>
+</body>
+</html>

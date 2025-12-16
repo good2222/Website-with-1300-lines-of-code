@@ -1,0 +1,74 @@
+body {
+    animation: fallDown 500ms ease-in-out forwards;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffc8c8, #b81f1f);
+    text-align: center;
+}
+
+.success-message {
+    color: #c0392b;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+p {
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+.container {
+    animation: fallDown 1s ease-in-out forwards;
+    margin: 70px auto;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #c0392b;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@keyframes fallDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+
+strong {
+    color: #e74c3c;
+}
+
+button {
+    transition: all 0.8s ease;
+    padding: 10px 20px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #a93226;
+    background: linear-gradient(to right, #ff7979, #a93226);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вибір вікторини</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style4.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Вітаю, {{ username }}!</h2>
+        <p>Ви увійшли в систему.</p>
+        <h1>Оберіть вікторину</h1>
+        <form action="{{ url_for('quiz_start') }}" method="POST">
+            <select name="quiz" required>
+                {% for quiz in quizzes %}
+                    <option value="{{ quiz[0] }}">{{ quiz[1] }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Почати</button>
+        </form>
+
+        <a href="{{ url_for('logout') }}">Вийти</a>
+    </div>
+</body>
+</html>
